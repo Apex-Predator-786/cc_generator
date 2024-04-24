@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+:root {
+    --border-radius: 6px;
+    --black: black;
+    --color-2: #282c34; 
+    --color: #c0c0c0;  
+    --navbg: #191d24; 
+    --body-bg: #101317; 
+    --mdiv-bg: #191d24; 
+    --btn-color: #c0c0c0; 
+    --btn-bg: #282c34; 
+    --btn-hover: #c0c0c0; 
+    --btn-bg-hover: #3c4049;
+    --moon: #77bcd1; 
+    --sun: #ffeb3b;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--color);
+}
+
+/* header and nav section */
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--navbg);
+}
+
+nav {
+    height: 10vh;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label,
+h3,
+option,
+button {
+    font-family: "Poppins", sans-serif !important;
+}
+button{
+    cursor: pointer;
+}
+
+.fa-moon {
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--moon);
+    display: none;
+}
+
+.fa-sun {
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--sun);
+}
+
+/* main section */
+
+.main-div {
+    margin-top: 5vh;
+    height: auto;
+    width: 100vw;
+}
+
+.mdiv {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* mdiv-1 section  */
+
+.mdiv-1 {
+    padding: 20px;
+    border: 2px solid var(--color);
+    background-color: var(--mdiv-bg);
+    border-radius: var(--border-radius);
+    flex-direction: column;
+}
+
+/* div-1 section  */
+
+#bin {
+    padding: 7px 6px 8px 10px;
+    width: 21.5rem;
+    color: var(--color);
+}
+
+#bin::placeholder {
+    font-weight: 700;
+    font-size: .875rem;
+}
+
+#formet {
+    width: 10.6875rem;
+    padding: 6px 6px 5px 13px;
+}
+
+#formet option {
+    color: var(--color);
+}
+
+/* div-2 section */
+#month {
+    border-radius: var(--border-radius);
+    padding: 0px 0px 0px 16px;
+    width: 15.4375rem;
+
+}
+
+#month :first-child,
+#year :first-child {
+    background-color: var(--body-bg);
+    color: var(--color);
+}
+
+#month option {
+    color: var(--color);
+}
+
+#year {
+    border-radius: var(--border-radius);
+    padding: 0px 0px 0px 16px;
+    width: 15.4375rem;
+}
+
+#year option {
+    color: var(--color);
+}
+
+/* div-3 section */
+
+#cvv {
+    width: 13.4375rem;
+    padding: 4px 8px 4px 19px;
+}
+
+#cvv::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#Quantity {
+    color: var(--color);
+    width: 13.375rem;
+    padding: 4px 10px 4px 20px;
+}
+
+/* div-4 section */
+
+.gen-btn {
+    width: 99%;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+/* mdiv-2 section  */
+
+.mdiv-2 {
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color);
+    background-color: var(--mdiv-bg);
+    flex-direction: column;
+}
+
+.mdiv-2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* div-2 */
+#result-ccs {
+    padding: 10px;
+    width: 95%;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--black);
+}
+
+/* div-2 */

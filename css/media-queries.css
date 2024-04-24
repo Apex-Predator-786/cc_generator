@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1076px){
+    .mdiv {
+       
+        grid-template-columns: 1fr;
+        
+    }
+    .mdiv-1 {
+       align-items: center;
+    }
+    .gen-btn {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 760px){
+    .gen-btn {
+        width: 100%;
+    }
+    .mdiv-1{
+        display: block;
+        margin: auto;
+    }
+    .mdiv-2{
+        display: block;
+        margin: auto;
+    }
+    label{
+        font-size: smaller;
+    }
+    #formet{
+        width: auto;
+    }
+    #bin{
+        width: auto;
+    }
+    #month{
+        
+        width: auto;
+        padding-right: 10px;
+    }
+    #year{
+        width: auto;
+        padding-right: 10px;
+
+    }
+    #cvv{
+        width: auto;
+    }
+    #Quantity {
+       
+      width: 2.5rem;
+    }
+    
+}
+@media only screen and (max-width: 540px){
+    .mdiv-2 {
+        padding-right: 30px;
+    }
+    .end-btn {
+      font-size: x-small;
+    }
+    
+}
+
