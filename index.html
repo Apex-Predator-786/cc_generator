@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdY17gGJtVEYjcNlLgtdGeBY-u82Yu8bf96Jad9SW7l8ssO0nBxh4gdqE7ij83pvkL_-5x8boKfhh8jEcyVWZ5loznIvjWJSLQXRQEVG5BckXEuzwWr_WoNVrOln8M2zDYGZH0Fexo8zCEWAoC9aEFOsovTONHLP23Y1CSr6Fp5rwiZ6AAwtLCMbal34o/s320/favicon.png">
+    <title>CC Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+</head>
+
+<body>
+    <header class="flex_justify">
+        <nav  class="flex">
+            <h2>CC Generator</h2>
+            <i class="fa-solid fa-moon" onclick="navmoon()"></i>
+            <i class="fa-solid fa-sun" onclick="navsun()"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="main-div flex_justify">
+            <div class="mdiv">
+                <div class="mdiv-1 flex gap ">
+                    <div class="mdiv-1-div-1 gap flex">
+                        <div>
+                            <label for="bin-name">BIN</label>
+                            <div class="margin">
+                                <input type="text" name="bin" class="main-properties" id="bin"
+                                    placeholder="eg:- 549184xxxxxxxxxx" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="formet-name">Formet</label>
+                            <div class="margin">
+                                <select name="formet" title="formet" class="main-properties main-font" id="formet">
+                                    <option value="PIPE">PIPE</option>
+                                    <option value="CSV">CSV</option>
+                                    <option value="SQL">SQL</option>
+                                    <option value="JSON">JSON</option>
+                                    <option value="XML">XML</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdiv-1-div-2">
+                        <label for="date">Date</label>
+                        <div class="flex gap margin">
+
+                            <div class="flex">
+                                <span class="checkbox">
+                                    <input type="checkbox" placeholder="date" name="date-checkbox" id="date-checkbox"
+                                        checked>
+                                </span>
+                                <select name="month" title="month" id="month"
+                                    class="main-properties main-font margin-left">
+                                    <option value="Random">Random</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="flex">
+                                <select name="year" title="year" id="year" class="main-properties main-font">
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdiv-1-div-3 flex gap">
+                        <div>
+                            <label for="cvv">cvv</label>
+                            <div class="flex margin">
+                                <span class="checkbox">
+                                    <input type="checkbox" placeholder="cvv" name="cvv-checkbox" id="cvv-checkbox"
+                                        checked>
+                                </span>
+                                <input type="number" name="cvv" class="main-properties margin-left" id="cvv"
+                                    placeholder="Leave blank to randomize" min="0" max="9999">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Quantity">Quantity</label>
+                            <div class="flex margin quantity">
+                                <input type="number" class="main-properties" name="Quantity" id="Quantity" value="5"
+                                    min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdiv-1-div-4 margin">
+                        <button class="btn gen-btn" onclick="gencc(),genc()">Genarate Cards</button>
+                    </div>
+                </div>
+                <div class="mdiv-2 flex_justify">
+                    <h3>Results</h3>
+                    <div class="mdiv-2-div-1 margin">
+                        <textarea name="textarea" id="result-ccs" cols="30" rows="11"
+                            placeholder="549184xxxxxxxxxx|xx|20xx|xxx"></textarea>
+                    </div>
+                    <div class="mdiv-2-div-2 margin">
+                        <button class="btn end-btn" onclick="copy()">Copy Cards</button>
+                        <button class="btn end-btn" onclick="shuffle()">Shuffle Cards</button>
+                        <button class="btn end-btn" onclick="Clear()">clear Cards</button>
+                        <button class="btn end-btn" onclick="formet()">Formet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/multibin.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/preload.js"></script>
+</body>
+
+</html>
