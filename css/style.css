@@ -11,22 +11,26 @@
 :root {
     --border-radius: 6px;
     --black: black;
-    --color-2: #282c34; 
-    --color: #c0c0c0;  
-    --navbg: #191d24; 
-    --body-bg: #101317; 
-    --mdiv-bg: #191d24; 
-    --btn-color: #c0c0c0; 
-    --btn-bg: #282c34; 
-    --btn-hover: #c0c0c0; 
+    --color-2: #282c34;
+    --color: #c0c0c0;
+    --navbg: #191d24;
+    --body-bg: #101317;
+    --mdiv-bg: #191d24;
+    --btn-color: #c0c0c0;
+    --btn-bg: #282c34;
+    --btn-hover: #c0c0c0;
     --btn-bg-hover: #3c4049;
-    --moon: #77bcd1; 
+    --moon: #77bcd1;
     --sun: #ffeb3b;
 }
 
 body {
     background-color: var(--body-bg);
     color: var(--color);
+}
+
+main {
+    position: relative;
 }
 
 /* header and nav section */
@@ -50,7 +54,8 @@ option,
 button {
     font-family: "Poppins", sans-serif !important;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -194,3 +199,14 @@ button{
 }
 
 /* div-2 */
+
+
+/* icons */
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
