@@ -3,6 +3,9 @@ var root = document.querySelector(':root');
 var moon = document.querySelector(".fa-moon");
 var sun = document.querySelector(".fa-sun");
 
+moon.addEventListener("click", navmoon)
+sun.addEventListener("click", navsun)
+
 function navmoon() {
     moon.style.display = "none";
     sun.style.display = "inline";
