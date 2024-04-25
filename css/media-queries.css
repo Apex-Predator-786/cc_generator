@@ -1,64 +1,85 @@
-@media only screen and (max-width: 1076px){
+@media only screen and (max-width: 1076px) {
     .mdiv {
-       
+
         grid-template-columns: 1fr;
-        
+
     }
+
     .mdiv-1 {
-       align-items: center;
+        align-items: center;
     }
+
     .gen-btn {
         width: 100%;
         padding: 5px 10px;
     }
+
+    .fa-brands {
+        font-size: 35px;
+    }
 }
-@media only screen and (max-width: 760px){
+
+@media only screen and (max-width: 760px) {
     .gen-btn {
         width: 100%;
     }
-    .mdiv-1{
+
+    .mdiv-1 {
         display: block;
         margin: auto;
     }
-    .mdiv-2{
+
+    .mdiv-2 {
         display: block;
         margin: auto;
     }
-    label{
+
+    label {
         font-size: smaller;
     }
-    #formet{
+
+    #formet {
         width: auto;
     }
-    #bin{
+
+    #bin {
         width: auto;
     }
-    #month{
-        
+
+    #month {
+
         width: auto;
         padding-right: 10px;
     }
-    #year{
+
+    #year {
         width: auto;
         padding-right: 10px;
 
     }
-    #cvv{
+
+    #cvv {
         width: auto;
     }
+
     #Quantity {
-       
-      width: 2.5rem;
+
+        width: 2.5rem;
     }
-    
+
 }
-@media only screen and (max-width: 540px){
+
+@media only screen and (max-width: 540px) {
     .mdiv-2 {
         padding-right: 30px;
     }
-    .end-btn {
-      font-size: x-small;
-    }
-    
-}
 
+    .end-btn {
+        font-size: x-small;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+}
