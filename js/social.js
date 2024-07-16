@@ -1,7 +1,7 @@
 document.querySelector(".fa-telegram").addEventListener("click", telegram);
 
 function telegram() {
-    window.open("https://t.me/Apex_Predator_786", "_blank");
+    window.open("https://t.me/Web_Designers_Taskforce", "_blank");
 }
 document.querySelector(".fa-github").addEventListener("click", github);
 
